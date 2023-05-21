@@ -1,0 +1,7 @@
+{
+  "name": "projeto-dict",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
