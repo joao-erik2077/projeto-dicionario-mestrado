@@ -7,6 +7,17 @@ import { Component } from '@angular/core';
 })
 export class Tab1Page {
 
-  constructor() {}
+  jogos: any = [
+    {
+      name: 'Pick the Color',
+      description: 'Escolha a opção correta para o nome de cada cor na linguagem correta!',
+    },
+    {
+      name: 'Pick the Color',
+      description: 'Escolha a opção correta para o nome de cada cor na linguagem correta!',
+    },
+  ];
+
+  constructor() { }
 
 }

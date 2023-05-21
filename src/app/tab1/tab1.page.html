@@ -1,17 +1,19 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 1
+      Jogos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-card *ngFor="let jogo of jogos">
+      <ion-card-header>
+        <ion-card-title>{{ jogo.name }}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>{{ jogo.description }}</ion-card-content>
+    </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  </ion-list>
 </ion-content>

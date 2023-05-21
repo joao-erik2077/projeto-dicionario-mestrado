@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#" (click)="returnToPage()"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Definição
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <ion-grid *ngIf="data">
+    <ion-item>
+      <ion-card-header mode="md">
+        <ion-card-title color="tertiary">{{ data.word }}</ion-card-title>
+      </ion-card-header>
+      <ion-button color="tertiary" (click)="pronounceWord(data.word, 5)">
+        <ion-icon name="volume-medium" slot="start" style="font-size: 1.2rem; margin-left: .1rem;"></ion-icon>
+        <ion-label>UK</ion-label>
+      </ion-button>
+      <ion-button color="tertiary" (click)="pronounceWord(data.word, 4)">
+        <ion-icon name="volume-medium" slot="start" style="font-size: 1.2rem; margin-left: .1rem;"></ion-icon>
+        <ion-label>US</ion-label>
+      </ion-button>
+    </ion-item>
+    <ion-item>
+      <ion-card-header mode="md">
+        <ion-card-title color="tertiary" class="subtitle">DEFINIÇÃO</ion-card-title>
+        <ion-card-subtitle>{{ data.definition }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-item>
+    <ion-item>
+      <ion-card-header mode="md">
+        <ion-card-title color="tertiary" class="subtitle">DESCRIÇÃO</ion-card-title>
+        <ion-card-subtitle>{{ data.description }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-item>
+    <ion-item>
+      <ion-card-header mode="md">
+        <ion-card-title color="tertiary" class="subtitle">ETIMOLOGIA</ion-card-title>
+        <ion-card-subtitle>{{ data.etymology }}</ion-card-subtitle>
+      </ion-card-header>
+    </ion-item>
+
+  </ion-grid>
+
+</ion-content>

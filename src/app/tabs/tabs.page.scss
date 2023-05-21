@@ -1,1 +1,13 @@
+@import url('../../theme/variables.scss');
 
+ion-tab-button:nth-child(1) {
+  --color-selected: var(--ion-color-primary)
+}
+
+ion-tab-button:nth-child(2) {
+  --color-selected: var(--ion-color-tertiary)
+}
+
+ion-tab-button:nth-child(3) {
+  --color-selected: var(--ion-color-success)
+}
