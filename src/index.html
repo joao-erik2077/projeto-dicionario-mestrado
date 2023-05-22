@@ -8,7 +8,8 @@
   <base href="/" />
 
   <meta name="color-scheme" content="light dark" />
-  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport"
+    content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="format-detection" content="telephone=no" />
   <meta name="msapplication-tap-highlight" content="no" />
 
@@ -21,6 +22,10 @@
 
 <body>
   <app-root></app-root>
+  <script defer>
+    // Force mobile view, this version is purely for mobile website display.
+    document.body.style = 'width: 23vw; position: absolute; left: 50%; min-width: 25rem; max-width: 98vw; top: 50%; transform: translate(-50%, -50%);'
+  </script>
 </body>
 
 </html>
