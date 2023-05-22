@@ -1,0 +1,14 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  ion-button {
+    width: 45%;
+    font-weight: 500;
+  }
+  #special {
+    width: 100%;
+  }
+}
+

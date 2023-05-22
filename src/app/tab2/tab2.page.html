@@ -20,7 +20,9 @@
       </ion-card-header>
       <ion-icon color="tertiary" name="chevron-forward" slot="end"></ion-icon>
       <ion-ripple-effect></ion-ripple-effect>
-
     </ion-item>
+    <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
   </ion-list>
 </ion-content>
